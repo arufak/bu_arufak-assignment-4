@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); 
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6f8f7d, #6f8f7d
+    );
+    color: #163842;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+    color: #323d8f;
+    text-align: center;
+    font-size: 4rem; /* Increased font size */
+    font-family: 'Luckiest Guy', cursive; /* Fun and bold font */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Increased shadow for more emphasis */
+    letter-spacing: 2px; /* Adds spacing between letters for more dramatic look */
+    margin-bottom: 20px;
+    animation: slide-in 1s ease-out;
+}
+
+h2 {
+    color: #333;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fade-in 1.2s ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 350px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff6347, #ff4500);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c16bbd, #ff6347);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
+/* Results Section */
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-in 1.5s ease-out;
+}
+
+#results div {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#results div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+#results div p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Chart Styling */
+canvas {
+    margin-top: 20px;
+    animation: fade-in 1.8s ease-out;
+    color : #000;
+}
+
+/* Add Fun Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
